@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ỨNG DỤNG QUẢN LÝ SÁCH</title>
+    <th:block th:replace="layout :: link-css"></th:block>
+
+</head>
+<body>
+<th:block th:replace="layout :: header"></th:block>
+<div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TRANG CHỦ ỨNG DỤNG QUẢN LÝ SÁCH - KẾT NỐI CSDL MYSQL</a>
+        </div>
+    </nav>
+</div>
+
+
+
+
+<!--<h1>Trang Chủ</h1>-->
+<!--<h2>Tôi là sinh viên Khoa CNTT HUTECH</h2>-->
+<!--&lt;!&ndash;Hiển thị danh sách các môn học như java html css web bằng thẻ ul và li mỗi môn có 1 hình ảnh đi kèm có css cho thẻ&ndash;&gt;-->
+<!--<ul>-->
+<!--    <li>-->
+<!--        <img src="data:image/png;base64,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" alt="Java">Java</li>-->
+<!--    <li><a href="#">HTML</a></li>-->
+<!--    <li><a href="#">CSS</a></li>-->
+<!--    <li><a href="#">Web</a></li>-->
+<!--</ul>-->
+
+
+<!--✓-->
+<!--Khoa CNTT Hutech, mỗi môn học kèm theo 1 hình ảnh.-->
+<!--✓ Hiển thị Form liên hệ (tại trang contact), người dùng nhập thông tin bao-->
+<!--gồm Họ Tên, Email, Tin nhắn. Khi người dùng nhấn vào nút gửi thông tin,-->
+<!--hệ thống sẽ xử lý và hiển thị thông tin liên hệ mà người dùng đã nhập sang-->
+<!--một màn hình kết quả (trang result).-->
+
+<th:block th:replace="layout :: footer"></th:block>
+</body>
+
+</html>
